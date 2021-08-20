@@ -9,3 +9,7 @@ export type ROW = [N, N, N, N , N, N, N, N, N]
 export type SQUARE = [SQUAREROW, SQUAREROW, SQUAREROW]
 
 export type SQUAREROW = [N, N, N]
+
+export type BLOCK_COORD = [INDEX, INDEX]
+
+export type INDEX = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8

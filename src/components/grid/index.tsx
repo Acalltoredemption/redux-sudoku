@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux'
 import { Dispatch, AnyAction } from 'redux'
 import { createGrid } from 'reducers'
 import { INDEX } from 'typings'
+import useMousetrap from 'react-hook-mousetrap'
 
 const Grid: FC = () => {
   const dispatch = useDispatch<Dispatch<AnyAction>>()
@@ -12,6 +13,24 @@ const Grid: FC = () => {
   useEffect(() => {
     create()
   }, [create])
+
+  function moveDown() {
+    console.log('down')
+  }
+  function moveLeft() {
+    console.log('left')
+  }
+  function moveRight() {
+    console.log('right')
+  }
+  function moveUp() {
+    console.log('up')
+  }
+
+  useMousetrap('down', moveDown)
+  useMousetrap('left', moveLeft)
+  useMousetrap('right', moveRight)
+  useMousetrap('up', moveUp)
 
   return (
     <Container data-cy="grid-container">

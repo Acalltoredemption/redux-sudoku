@@ -17,3 +17,5 @@ export {default as copyGrid} from './copy-grid';
 export {default as solveGrid} from './solve-grid';
 
 export { default as removeNumbers} from './remove-numbers';
+
+export {default as compareArrays} from './compare-array';

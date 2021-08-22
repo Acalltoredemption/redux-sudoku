@@ -27,6 +27,7 @@ function solveGrid(grid: GRID){
                         } else if (solveGrid(grid)) return true;
                     }
                 }
+                break;
             
         }
     }

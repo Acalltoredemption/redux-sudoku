@@ -7,7 +7,7 @@ export const Card = styled.div`
     display: flex;
     flex: 1;
     flex-direction: column;
-    max-height: fit-content;
+    max-height: 700px;
     padding: 15px;
   `}
 `
